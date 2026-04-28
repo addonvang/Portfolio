@@ -1,0 +1,214 @@
+.roboto-mono-text {
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto Mono", monospace;
+    background-color: rgb(15, 17, 21);
+    color: rgb(210, 210, 210);
+    text-align: center;
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+}
+
+h2 {
+    color: rgb(230, 230, 230);
+}
+
+h3 {
+    color: rgb(200, 200, 200);
+}
+
+header {
+    padding: 75px;
+    padding-bottom: 20px;
+    background-color: rgb(28, 31, 38);
+}
+
+header h1 {
+    font-size: 90px;
+}
+
+header h2 {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: rgb(255, 210, 80);
+}
+
+header p {
+    margin: 20px auto;
+    width: 50%;
+    font-size: 20px;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: rgb(28, 31, 38);
+    z-index: 1;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+.navbar ul {
+    list-style-type: none;
+}
+
+.navbar li {
+    float: right;
+}
+
+.navbar li a {
+    display: block;
+    color: rgb(228, 228, 228);
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar li a:hover {
+    background-color: rgb(15, 17, 21);
+}
+
+#profile, #resume {
+    scroll-margin-top: 60px;
+}
+
+article {
+    margin: auto;
+    width: 75%;
+    padding-top: 50px;
+}
+
+.profile, .resume {
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+.profile p {
+    font-size: 18px;
+    margin: 50px;
+}
+
+.row {
+    width: 80%;
+    margin: auto;
+    margin-top: 80px;
+    display: table;
+
+    outline: 8px solid rgb(28, 31, 38);
+    border-radius: 20px;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+}
+
+.column ul {
+    padding-left: 15%;
+}
+
+.column li {
+    font-size: 20px;
+    margin: 12px;
+    text-align: left;
+}
+
+.column li:nth-child(even) {
+    color: rgb(180, 180, 180);
+}
+
+.column li span {
+    font-size: 10px;
+    color: rgb(180, 180, 180);
+}
+
+.column li:nth-child(even) span {
+    color: rgb(130, 130, 130);
+}
+
+.column:nth-child(even) {
+    background-color: rgb(28, 31, 38);
+}
+
+.column h3 {
+    font-size: 18px;
+    margin: 10px 0 20px 0;
+}
+
+hr {
+    width: 90%;
+    margin: auto;
+    border: 5px solid rgb(28, 31, 38);
+    border-radius: 10px;
+}
+
+.resume h3 {
+    margin-bottom: 50px;
+}
+
+.resume embed {
+    width: 100%;
+    min-height: 350px;
+    height: 1000px;
+}
+
+footer {
+    padding: 20px;
+    background-color: rgb(28, 31, 38);
+}
+
+footer p {
+    padding: 20px;
+}
+
+.hidden {
+    opacity: 0;
+    transition: all 1.25s;
+    filter: blur(5px);
+    transform: translateX(-100%);
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+@media(prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+}
+
+@media only screen and (max-width: 1000px) { 
+    header {
+        width: 100%;
+    }
+
+    header p {
+        width: 100%;
+    }
+
+    article {
+        width: 100%;
+    }
+
+    .row {
+        width: 100%;
+    }
+    .column {
+        width: 100%;
+    }
+}
